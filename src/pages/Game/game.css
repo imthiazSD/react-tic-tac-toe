@@ -1,7 +1,12 @@
+h1 {
+  color: #e74d3cc7;
+}
+
 .game {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  background-color: rgb(255, 243, 233);
 }
