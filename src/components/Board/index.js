@@ -11,9 +11,7 @@ export default function Board({ rows, handleCellClick, isPlayerOne }) {
               return (
                 <div
                   className="board-cell"
-                  onClick={(e) =>
-                    handleCellClick(xIndex, yIndex, isPlayerOne ? "X" : "O")
-                  }
+                  onClick={(e) => handleCellClick(xIndex, yIndex)}
                 >
                   <p>{rowItem || ""}</p>
                 </div>

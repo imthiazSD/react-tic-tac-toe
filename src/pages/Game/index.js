@@ -12,21 +12,22 @@ const DEFAULT_ROWS = [
 export default function Game() {
   const [rows, setRows] = useState(DEFAULT_ROWS);
   const [isPlayerOne, setIsPlayerOne] = useState(true);
-  const [finished, setFinished] = useState(false);
+  const [moves, setMoves] = useState(0);
 
-  const handleCellClick = (x, y, playerMark) => {
-    setRows(updateCell(rows, x, y, playerMark));
+  const handleCellClick = (x, y) => {
+    // return if the cell has already been marked
+    if (rows[y][x]) {
+      return;
+    }
+    setRows(updateCell(rows, x, y, isPlayerOne ? "X" : "O"));
     setIsPlayerOne(!isPlayerOne);
+    setMoves(moves + 1);
   };
 
   return (
     <div className="game">
       <h1>{`${isPlayerOne ? "X" : "O"}'s turn`}</h1>
-      <Board
-        rows={rows}
-        handleCellClick={handleCellClick}
-        isPlayerOne={isPlayerOne}
-      />
+      <Board rows={rows} handleCellClick={handleCellClick} />
     </div>
   );
 }
