@@ -1,0 +1,23 @@
+.board {
+  /* height: 300px; */
+  /* width: 300px; */
+  max-width: 300px;
+  border: black 1px solid;
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-cell {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #9b59b6;
+  border: black 1px solid;
+  justify-content: center;
+  align-items: center;
+  color: #2c023d;
+  font-size: larger;
+  font-weight: bold;
+}
