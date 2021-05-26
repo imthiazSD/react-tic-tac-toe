@@ -51,6 +51,7 @@ export default function Game() {
   };
 
   const handleCellClick = (x, y) => {
+    if (finished) return;
     // return if the cell has already been marked
     if (rows[y][x]) {
       return;
