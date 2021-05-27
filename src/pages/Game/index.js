@@ -17,8 +17,6 @@ export default function Game() {
   useEffect(() => {
     // If moves is greater or equal to 5 run winner algo
     const winner = getWinner(rows);
-    console.log("ROW");
-    console.log("called");
 
     if (winner) {
       toast.error(`${winner} has won!`, { position: "top-center" });
