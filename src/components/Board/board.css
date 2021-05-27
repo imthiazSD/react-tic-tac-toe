@@ -1,0 +1,30 @@
+.board {
+  border-radius: 10px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-cell {
+  border-radius: 10px;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #ffe4db;
+  /* border: black 1px solid; */
+  justify-content: center;
+  align-items: center;
+  color: #e74c3c;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 10px 15px 1px;
+}
+
+.board-cell:active {
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 5px 15px 1px;
+}
