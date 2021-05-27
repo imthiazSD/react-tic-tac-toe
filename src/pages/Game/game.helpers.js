@@ -62,12 +62,12 @@ export function getWinner(rows) {
     for (let j = 0; j < players.length; j++) {
       const playerMark = players[j];
       const currentLine = winningLines[i];
-      const [a, b, c] = currentLine;
+      const [cell1, cell2, cell3] = currentLine;
       if (
-        rows[a[0]][a[1]] &&
-        rows[a[0]][a[1]] === playerMark &&
-        rows[a[0]][a[1]] === rows[b[0]][b[1]] &&
-        rows[b[0]][b[1]] === rows[c[0]][c[1]]
+        rows[cell1[0]][cell1[1]] &&
+        rows[cell1[0]][cell1[1]] === playerMark &&
+        rows[cell1[0]][cell1[1]] === rows[cell2[0]][cell2[1]] &&
+        rows[cell2[0]][cell2[1]] === rows[cell3[0]][cell3[1]]
       ) {
         return playerMark;
       }
