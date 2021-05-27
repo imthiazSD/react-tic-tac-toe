@@ -11,6 +11,7 @@ export default function Board({ rows, handleCellClick }) {
               return (
                 <div
                   className="board-cell"
+                  data-testid={`cell_${yIndex}-${xIndex}`}
                   key={`cell_${xIndex}`}
                   onClick={(e) => handleCellClick(xIndex, yIndex)}
                 >
