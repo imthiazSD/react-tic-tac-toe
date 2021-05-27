@@ -10,7 +10,7 @@ A tic tac toe game built with react
 
 ### `yarn`
 
-Install all the dependecies required to run the app.
+Installs all the dependecies required to run the app.
 
 ### `yarn start`
 
