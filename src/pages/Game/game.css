@@ -2,6 +2,26 @@ h1 {
   color: #e74d3cc7;
 }
 
+.btn-play-again {
+  font-size: 24px;
+  border: none;
+  background-color: #e74d3cc7;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #ffe4db;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 10px 15px 1px;
+  width: 200px;
+}
+
+.btn-play-again:active {
+  font-size: 23px;
+  width: 190px;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 5px 5px 1px;
+}
+
 .game {
   display: flex;
   justify-content: center;
