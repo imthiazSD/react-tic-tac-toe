@@ -67,6 +67,7 @@ export default function Game() {
         {finished ? (
           <button
             className="btn-play-again"
+            data-testid="btn-reset"
             onClick={(e) => {
               resetBoard();
             }}

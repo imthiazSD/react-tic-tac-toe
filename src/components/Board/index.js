@@ -3,7 +3,7 @@ import "./board.css";
 
 export default function Board({ rows, handleCellClick }) {
   return (
-    <div className="board">
+    <div className="board" data-testid="board">
       {rows.map((row, yIndex) => {
         return (
           <div className="board-row" key={`row_${yIndex}`}>
