@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./board.css";
 
 export default function Board({ rows, handleCellClick }) {
@@ -25,3 +26,8 @@ export default function Board({ rows, handleCellClick }) {
     </div>
   );
 }
+
+Board.propTypes = {
+  rows: PropTypes.arrayOf(PropTypes.array),
+  handleCellClick: PropTypes.func,
+};
